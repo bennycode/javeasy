@@ -8,3 +8,10 @@ jdk:
   - oraclejdk8
 
 install: mvn clean package -DskipTests=true
+
+notifications:
+  email:
+    recipients:
+      - bn@welovecoding.com
+    on_success: never
+    on_failure: always
