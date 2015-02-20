@@ -3,7 +3,8 @@ language: java
 jdk:
 - oraclejdk8
 install: mvn clean package -DskipTests=true
-script: mvn package -Popenshift
+# script: mvn package -Popenshift
+script: mvn package
 notifications:
   email:
     recipients:
