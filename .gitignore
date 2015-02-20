@@ -1,2 +1,5 @@
 /confidential/
 /target/
+
+# OpenShift deployment directory
+.dpl/
