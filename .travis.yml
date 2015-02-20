@@ -16,6 +16,6 @@ deploy:
   password:
     secure: J/nrt2hU/vExIBzX4zfi9FyyA9l+PrmuUgO0fPANcJJW2Z8ZCIk/z9U0eqzP8CDADEBKq+BlCD2K3lr7paezw0pgwOOQNTOwYcS84Em/xSRHqWa6L1C6cdOGGHWitgMME2Gs1CZX2iP4nBYDpsMv/GxMzDfaSuPjHnA5uwrbkL0=
   app: jbosswildfly
-  domain: www.javeasy.com
+  domain: welovecoding
   on:
     repo: welovecoding/javeasy
