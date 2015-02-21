@@ -1,17 +1,20 @@
-# http://docs.travis-ci.com/user/workers/container-based-infrastructure/
 sudo: false
-
-# http://docs.travis-ci.com/user/languages/java/
 language: java
-
 jdk:
-  - oraclejdk8
-
+- oraclejdk8
 install: mvn clean package -DskipTests=true
-
 notifications:
   email:
     recipients:
     - bn@welovecoding.com
     on_success: never
     on_failure: always
+deploy:
+  provider: openshift
+  user: bn@bennyn.de
+  password:
+    secure: QYLnsw4zVcDi+7AzwU9XUmUWn8fbHCGI9JHb1QgnDTkTNgYuUubzne98/4ez90FPJwGbvxSIg/1OFif/FgQ+fqjO1b4jPtOjaZynvR2A4w+icI4GdifoXCzIaJenwf5RHQdxbSA+WHfoHlV5v5rCQWiWjr+dlz3bXPPV8gYKHkA=
+  app: jbosswildfly
+  domain: welovecoding
+  on:
+    repo: welovecoding/javeasy
