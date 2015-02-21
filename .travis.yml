@@ -13,7 +13,7 @@ notifications:
       - bn@welovecoding.com
     on_success: never
     on_failure: always
-	
+
 # http://docs.travis-ci.com/user/deployment/openshift/
 deploy:
   provider: openshift
