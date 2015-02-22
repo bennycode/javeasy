@@ -8,11 +8,8 @@ jdk:
 
 # http://docs.travis-ci.com/user/notifications/
 notifications:
-  email:
-    recipients:
-      - bn@welovecoding.com
-    on_success: never
-    on_failure: always
+  email: false
+  slack: wlc:Kinf3gdySndcFTBtjcci3rJN
 
 # http://docs.travis-ci.com/user/deployment/openshift/
 deploy:
