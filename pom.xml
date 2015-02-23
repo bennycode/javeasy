@@ -26,6 +26,33 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
+  
+  <build>
+    <plugins> 
+      <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>1.8</version>
+        <executions>
+          <execution>
+            <id>render-maven-properties</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <target>
+                <echo>project.artifactId...................: ${project.artifactId}</echo>
+                <echo>project.basedir......................: ${project.basedir}</echo>
+                <echo>project.build.directory..............: ${project.build.directory}</echo>
+                <echo>project.build.outputDirectory........: ${project.build.outputDirectory}</echo>
+                <echo />
+              </target>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 
   <profiles>
     <profile>
@@ -36,7 +63,8 @@
       <id>openshift</id>
       <build>
         <finalName>jbosswildfly</finalName>
-        <plugins>
+        <plugins>        
+          <!-- Web archive plugin -->
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-war-plugin</artifactId>
