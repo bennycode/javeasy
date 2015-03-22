@@ -1,13 +1,15 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
-  <h:head>
-    <title>Facelet Title</title>
-    <h:outputScript library="bower_components/jquery/dist" name="jquery.js" />
-  </h:head>
-  <h:body>
-    <h:outputText value="#{facesContext.application.projectStage}"/>
-    <h:outputText value="#{initParam['javax.faces.PROJECT_STAGE']}"/>
-  </h:body>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+  <head jsf:id="head">
+    <meta charset="UTF-8" />
+    <title><ui:insert name="title">Facelet Title</ui:insert></title>
+    <script jsf:target="head" jsf:library="bower_components/jquery/dist" jsf:name="jquery.js"/>
+  </head>
+  <body jsf:id="body">
+    #{facesContext.application.projectStage}<br/>
+    #{initParam['javax.faces.PROJECT_STAGE']}
+  </body>
 </html>
