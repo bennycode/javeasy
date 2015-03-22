@@ -5,6 +5,10 @@ sudo: false
 language: java
 jdk:
   - oraclejdk8
+  
+# http://docs.travis-ci.com/user/build-lifecycle/  
+before_script:
+  - npm install -g bower  
 
 # http://docs.travis-ci.com/user/notifications/
 notifications:

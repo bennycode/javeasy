@@ -1,5 +1,7 @@
 /confidential/
 
+# Dependencies
+/src/main/webapp/resources
 
 # Builds
 /target/
