@@ -1,0 +1,8 @@
+##########
+echo "INFO: Installing Bower"
+
+OLD_HOME=$HOME
+export HOME=$OPENSHIFT_DATA_DIR
+
+export HOME=$OLD_HOME
+echo "INFO: HOME is $HOME"
