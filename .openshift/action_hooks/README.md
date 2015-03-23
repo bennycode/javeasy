@@ -2,3 +2,4 @@ For information about action hooks supported by OpenShift, consult the documenta
 
 - http://docs.openshift.org/origin-m4/oo_user_guide.html#action-hooks
 - https://developers.openshift.com/en/managing-action-hooks.html
+- https://developers.openshift.com/en/managing-modifying-applications.html
