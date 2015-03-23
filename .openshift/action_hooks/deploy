@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-OLD_HOME=$HOME
-export HOME=$OPENSHIFT_DATA_DIR
-npm install -g bower
-export HOME=$OLD_HOME
