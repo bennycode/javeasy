@@ -1,9 +1,0 @@
-{
-    "name": "Javeasy",
-    "devDependencies": {
-        "bower": "~1.3"
-    },
-    "scripts": {
-        "install": "HOME=$HOME/app-root/runtime bower install --config.interactive=false"
-    }
-}
