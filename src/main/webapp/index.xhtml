@@ -10,8 +10,13 @@
     <script jsf:target="head" jsf:library="vivus" jsf:name="vivus.js"/>
   </head>
   <body jsf:id="body">
-    #{facesContext.application.projectStage}<br/>
-    #{initParam['javax.faces.PROJECT_STAGE']}
+    <p>
+      <a href="login/facebook">Login with Facebook</a>
+    </p>
+    <p>
+      #{facesContext.application.projectStage}<br/>
+      #{initParam['javax.faces.PROJECT_STAGE']}
+    </p>
     <div id="my-div-id"></div>
     <script>
       new Vivus('my-div-id', {
