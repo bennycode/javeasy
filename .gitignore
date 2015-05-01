@@ -1,9 +1,5 @@
 /confidential/
-
-# Dependencies
-/src/main/webapp/resources/*
-!/src/main/webapp/resources/bower.json
-!/src/main/webapp/resources/package.json
+/bower_components/
 
 # Builds
 /target/
