@@ -10,6 +10,9 @@ public class LoginWithFacebookServlet extends HttpServlet {
 
   protected void processRequest(HttpServletRequest request, HttpServletResponse response)
           throws ServletException, IOException {
+
+    String facebookApiKey = request.getSession().getServletContext().getInitParameter("facebookApiKey");
+
     response.setContentType("text/html;charset=UTF-8");
     try (PrintWriter out = response.getWriter()) {
       /* TODO output your page here. You may use following sample code. */
@@ -19,7 +22,7 @@ public class LoginWithFacebookServlet extends HttpServlet {
       out.println("<title>Servlet LoginWithFacebookServlet</title>");
       out.println("</head>");
       out.println("<body>");
-      out.println("<h1>Servlet LoginWithFacebookServlet at " + request.getContextPath() + "</h1>");
+      out.println("<h1>Facebook API Key: " + facebookApiKey + "</h1>");
       out.println("</body>");
       out.println("</html>");
     }
