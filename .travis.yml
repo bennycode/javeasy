@@ -17,9 +17,9 @@ notifications:
 # http://docs.travis-ci.com/user/deployment/openshift/
 deploy:
   provider: openshift
-  user: bn@bennyn.de
+  user: openshift@welovecoding.com
   password:
-    secure: QYLnsw4zVcDi+7AzwU9XUmUWn8fbHCGI9JHb1QgnDTkTNgYuUubzne98/4ez90FPJwGbvxSIg/1OFif/FgQ+fqjO1b4jPtOjaZynvR2A4w+icI4GdifoXCzIaJenwf5RHQdxbSA+WHfoHlV5v5rCQWiWjr+dlz3bXPPV8gYKHkA=
-  app: jbosswildfly
+    secure: HRb4xIvqZ5gKRCkfv0SclFp8SzKExkzPzH9XF41vVGfDEfQ7GocxVSP1u2yyxOUMFbZbRqS9AYFWf8xJfHlBhnLLZfcVbQ6qjfG751E6xOmrWbjODkga9UBxlbc8p0fXoXt7RFDKXQtvpsHZ9D8WGhllJwel3IyVJ7a2MKlTkm0=
+  app: javeasy
   domain: welovecoding
   on: master
