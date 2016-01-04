@@ -1,7 +1,7 @@
 # javeasy | Test
 
 - http://www.javeasy.com/
-- http://ynedwpmkbhpu5hxh.myfritz.net:8080/javeasy/
+- http://javeasy-welovecoding.rhcloud.com/
 
 ## How to tun the project
 
