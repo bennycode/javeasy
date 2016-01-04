@@ -10,12 +10,9 @@
   <name>javeasy</name>
 
   <properties>
-    <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <maven.compiler.executable>${env.OPENSHIFT_WILDFLY_DIR}usr/lib/jvm/jdk1.8.0_05/bin/javac</maven.compiler.executable>
-    <maven.compiler.fork>true</maven.compiler.fork>
     <!-- JSF -->
     <project.stage>Development</project.stage>
     <javax.faces.project.stage>Development</javax.faces.project.stage>
@@ -86,8 +83,8 @@
         <javax.faces.project.stage>Production</javax.faces.project.stage>
       </properties>
       <build>
-        <finalName>jbosswildfly</finalName>
-        <plugins>        
+        <finalName>javeasy</finalName>
+        <plugins>
           <!-- Web archive plugin -->
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
