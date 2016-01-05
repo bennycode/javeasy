@@ -1,12 +1,3 @@
 For information about action hooks supported by OpenShift, consult the documentation:
 
-- http://docs.openshift.org/origin-m4/oo_user_guide.html#action-hooks
-- https://developers.openshift.com/en/managing-action-hooks.html
-- https://developers.openshift.com/en/managing-modifying-applications.html
-
-Finding action hooks on gear:
-
-```bash
-rhc ssh jbosswildfly
-cd $OPENSHIFT_REPO_DIR/.openshift/action_hooks
-```
+https://github.com/openshift/origin-server/tree/master/node/README.writing_applications.md#action-hooks
