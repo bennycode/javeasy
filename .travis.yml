@@ -19,7 +19,7 @@ deploy:
   provider: openshift
   user: openshift@welovecoding.com
   password:
-    secure: HRb4xIvqZ5gKRCkfv0SclFp8SzKExkzPzH9XF41vVGfDEfQ7GocxVSP1u2yyxOUMFbZbRqS9AYFWf8xJfHlBhnLLZfcVbQ6qjfG751E6xOmrWbjODkga9UBxlbc8p0fXoXt7RFDKXQtvpsHZ9D8WGhllJwel3IyVJ7a2MKlTkm0=
+    secure: BfE1w5KPJ9OoUUJVerptq1ib5yTtR6Ya0uZrqujaUccXdgEJspSaEJtLUH6BvHmXqVkovTeFrSWF+7ChnOw3B971diiiBLZPETfdryZyDlySHVW5SiI0zjfSMJW0nrPE/DmHqZZE7+fZPZh5yG3usRVNtuq56Ea1ZqxAhoUFEnU=
   app: javeasy
   domain: welovecoding
   on: master
